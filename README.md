@@ -1,5 +1,24 @@
-# ipdust
-IPv4 addressing space organized in a fractal based visualization construct.
+# IPDust Overview
+IPv4 addressing space organized in a fractal based visualization construct.  Leverages a form of IP Cantor dust for organizational layout.  See Gallery for images.  
+  
+One simple use case to visualize the usage and organization of an enterprise addressing. Often with years of network implementations, enterprise IP addressing is poorly organized with minimal usage taking up large addressing block. For example that one DNS server left on a subnet, but moving it would cause a hug logistical challenge. Thus, an entire /24 is wasted because of a single, critical server.  
+  
+There are really 3 states represented in a square dust, or rather could be represented in a more productionalized version.  Green square dust = online/healthy/reserved, Red square dust (not shown) = offline/unhealthy, Blank square dust = offline/available.  
+
+# Dataset
+IP addressing dataset contains **1,144,066** 172.0.0.0/8 ipv4 addresses to demonstrate organization and visual patterns.  
+
+
+# Usage
+Add ipdust to local repository.  Run python -m http.server from directory at command line, or whatever http server preference.  Open browser to index.html.  
+  
+# Navigation
+Navigating through the addressing space:  
+**Left-clicking** center text of IP Network, such as "172.0.0.0/8"  increases the addressing depth, i.e. how many address/networks are displayed.  Please note that at a depth of 6 and above, it takes a while to display.  Of course improvements in efficiency could certainly be made.  
+**Right-clicking** center text of IP Network, reduces the addressing depth.  
+  
+**Left-clicking** any of the green squares results in changing the network address space represented, such as change from 172.0.0.0/8 to 172.52.0.0/16 (see image 10__172.0.0.0-8_172.52.0.0-16.png).  
+**Right-clicking** any green square results in resetting back to the default 172.0.0.0/8 with a Depth of 3.
 
 # Gallery
 Contains images of each IP addressing depth and related number of addresses visualized.  D0 is the single square to show the root of a 172.0.0.0/8 address.  D1 to D8 then shows the exponential increase in granuality of the addressing space when click on the center 172.0.0.0/8 text.  D stands for Depth.   
