@@ -1,7 +1,7 @@
 # IPDust Overview
 IPv4 addressing space organized in a fractal based visualization construct.  Leverages a form of IP Cantor dust for organizational layout.  See Gallery for images.  
   
-One simple use case to visualize the usage and organization of an enterprise addressing. Often with years of network implementations, enterprise IP addressing is poorly organized with minimal usage taking up large addressing block. For example that one DNS server left on a subnet, but moving it would cause a hug logistical challenge. Thus, an entire /24 is wasted because of a single, critical server.  
+One simple use case is to visualize the usage and organization of an enterprise addressing space. Often with years of network implementations, enterprise IP addressing is poorly organized with minimal usage taking up large addressing blocks. For example, a single DNS server left on a legacy subnet, but moving it would cause a huge logistical challenge. Thus, an entire /24 is wasted because of a single, critical server.  
   
 There are really 3 states represented in a square dust, or rather could be represented in a more productionalized version.  Green square dust = online/healthy/reserved, Red square dust (not shown) = offline/unhealthy, Blank square dust = offline/available.  
 
